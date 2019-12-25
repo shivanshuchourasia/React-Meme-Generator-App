@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default () => (
-	<div>
-		<h1>Welcome to React Meme Generator App!</h1>
-	</div>
-);
+import Header from '../components/Header';
+import MemeGenerator from '../components/MemeGenerator';
+
+class App extends Component {
+	render() {
+		return (
+			<div className="container">
+				<Header />
+				<MemeGenerator />
+			</div>
+		);
+	}
+}
+
+export default App;
